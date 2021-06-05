@@ -29,7 +29,7 @@ namespace Number_of_Islands
             {
                 for (int j = 0; j < column; j++)
                 {
-                    // when we find 1 i.e Island, perform DFS for all connecting Islands.
+                    // when we find 1 i.e Island, perform DFS for all connecting Islands and Sink them in water.
                     if (grid[i][j] == '1')
                     {
                         Sink(grid, i, j);
